@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Memorial - Paws Rainbow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="default">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">Paws Rainbow</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="m/luna-2024/">Memorial</a>
+          <a href="#">Pricing</a>
+        </div>
+        <a class="button" href="index.html">Back to home</a>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-card">
+          <div class="badge">Create in 1 minute</div>
+          <h1 class="hero-title">Create a memorial</h1>
+          <p class="hero-subtitle">Fill the essentials and preview your theme in real time. A magic link is sent to your email for edits later.</p>
+
+          <form class="form">
+            <label class="field">
+              Pet Name
+              <input type="text" placeholder="Luna" />
+            </label>
+            <label class="field">
+              Dates
+              <input type="text" placeholder="2012 - 2024" />
+            </label>
+            <label class="field">
+              Story
+              <textarea rows="4" placeholder="Share a favorite memory..."></textarea>
+            </label>
+            <label class="field">
+              Photo (max 5MB)
+              <input type="file" />
+            </label>
+            <label class="field">
+              Owner Email
+              <input type="email" placeholder="you@email.com" />
+            </label>
+            <div class="form-actions">
+              <button class="button" type="button">Create memorial</button>
+              <button class="button secondary" type="button">Preview demo</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="preview-shell">
+          <div class="card">
+            <div class="theme-toggle">
+              <button class="theme-button" type="button" data-theme="default">Pure Heaven</button>
+              <button class="theme-button premium-only" type="button" data-theme="starry">Starry Night</button>
+              <button class="theme-button premium-only" type="button" data-theme="rainbow">Rainbow Meadow</button>
+            </div>
+            <div class="notice">Live preview: <strong data-theme-label>Pure Heaven</strong></div>
+          </div>
+          <div class="hero-media">
+            <img
+              alt="Preview mock"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 480'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23f7efe5'/><stop offset='1' stop-color='%23fffaf5'/></linearGradient></defs><rect width='640' height='480' fill='url(%23g)'/><circle cx='180' cy='180' r='120' fill='%23f1c6a3' fill-opacity='0.5'/><circle cx='420' cy='160' r='140' fill='%23ffd6b7' fill-opacity='0.5'/><rect x='120' y='260' width='400' height='120' rx='28' fill='%23ffffff' fill-opacity='0.7'/></svg>"
+            />
+          </div>
+          <div class="card">
+            <div class="badge">Demo</div>
+            <p class="notice">Premium themes show as locked until payment. After payment, all themes become selectable.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>(c) 2026 Paws Rainbow. Secure, simple, and respectful memorials.</div>
+        <div>
+          <a href="#">Privacy Policy</a> - <a href="#">Terms of Service</a> - <a href="mailto:hello@pawsrainbow.com">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
